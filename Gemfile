@@ -9,6 +9,7 @@ gem 'spring', :group => :development
 gem 'pg'
 
 gem 'rabl'
+gem 'rack-cors', :require => 'rack/cors'
 
 
 # To use ActiveModel has_secure_password
