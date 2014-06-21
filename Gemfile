@@ -8,6 +8,7 @@ gem 'spring', :group => :development
 
 gem 'pg'
 
+gem 'rabl'
 
 
 # To use ActiveModel has_secure_password
