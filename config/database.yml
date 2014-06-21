@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
+  host: localhost
   database: getstrong_api_production
-  username: getstrong_api
-  password: <%= ENV['GETSTRONG_API_DATABASE_PASSWORD'] %>
+  username: getstrong
+  password: getstrong
