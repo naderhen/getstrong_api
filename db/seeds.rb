@@ -58,9 +58,9 @@ Step.create(routine_id: r4.id, exercise_id: dips.id, start_weight: 0, weight_inc
 
 w1 = Workout.create(date: Date.today, routine_id: r1.id)
 Workset.create(workout_id: w1.id, exercise_id: front_squat.id, weight: 95, prescribed_reps: 5, accomplished_reps: 5)
-Workset.create(workout_id: w1.id, exercise_id: front_squat.id, weight: 105, prescribed_reps: 5, accomplished_reps: 5)
-Workset.create(workout_id: w1.id, exercise_id: front_squat.id, weight: 125, prescribed_reps: 5, accomplished_reps: 5)
-Workset.create(workout_id: w1.id, exercise_id: front_squat.id, weight: 145, prescribed_reps: 5, accomplished_reps: 5)
+Workset.create(workout_id: w1.id, exercise_id: front_squat.id, weight: 115, prescribed_reps: 5, accomplished_reps: 5)
+Workset.create(workout_id: w1.id, exercise_id: front_squat.id, weight: 135, prescribed_reps: 5, accomplished_reps: 5)
+Workset.create(workout_id: w1.id, exercise_id: front_squat.id, weight: 155, prescribed_reps: 5, accomplished_reps: 5)
 Workset.create(workout_id: w1.id, exercise_id: bench.id, weight: 135, prescribed_reps: 12, accomplished_reps: 12)
 Workset.create(workout_id: w1.id, exercise_id: bench.id, weight: 155, prescribed_reps: 10, accomplished_reps: 10)
 Workset.create(workout_id: w1.id, exercise_id: bench.id, weight: 175, prescribed_reps: 8, accomplished_reps: 8)
