@@ -30,6 +30,10 @@ pullup = Exercise.create(name: "Pullups", rank: "Secondary", body_parts: ["Back"
 dbrow = Exercise.create(name: "One Arm DB Row", rank: "Secondary", body_parts: ["Back"])
 shrug = Exercise.create(name: "DB Shrug", rank: "Secondary", body_parts: ["Back"])
 
+straight_plank = Exercise.create(name: "Straight Plank", rank: "Secondary", body_parts: ["Abs"])
+side_plank = Exercise.create(name: "Side Plank", rank: "Secondary", body_parts: ["Abs"])
+crunches = Exercise.create(name: "Crunches", rank: "Secondary", body_parts: ["Abs"])
+knee_crunch = Exercise.create(name: "Knee Up Cross Crunch", rank: "Secondary", body_parts: ["Abs"])
 
 r1 = Routine.create(name: "Chest Workout")
 Step.create(routine_id: r1.id, exercise_id: front_squat.id, start_weight: 95, weight_increment: 20, set_reps: [5, 5, 5, 5])
@@ -55,6 +59,16 @@ Step.create(routine_id: r4.id, exercise_id: reverse_curl.id, start_weight: 45, w
 Step.create(routine_id: r4.id, exercise_id: rope_push.id, start_weight: 70, weight_increment: 20, set_reps: [12, 10, 8, 6])
 Step.create(routine_id: r4.id, exercise_id: skull.id, start_weight: 45, weight_increment: 20, set_reps: [12, 10, 8, 6])
 Step.create(routine_id: r4.id, exercise_id: dips.id, start_weight: 0, weight_increment: 20, set_reps: [12, 10, 8, 6])
+
+r5 = Routine.create(name: "Triceps & Abs")
+Step.create(routine_id: r5.id, exercise_id: rope_push.id, start_weight: 60, weight_increment: 20, set_reps: [12, 10, 8, 6])
+Step.create(routine_id: r5.id, exercise_id: skull.id, start_weight: 45, weight_increment: 20, set_reps: [12, 10, 8, 6])
+Step.create(routine_id: r5.id, exercise_id: dips.id, start_weight: 0, weight_increment: 20, set_reps: [12, 10, 8, 6])
+Step.create(routine_id: r5.id, exercise_id: straight_plank.id, start_weight: 0, weight_increment: 0, set_reps: [12, 10, 8, 6])
+Step.create(routine_id: r5.id, exercise_id: side_plank.id, start_weight: 0, weight_increment: 0, set_reps: [12, 10, 8, 6])
+Step.create(routine_id: r5.id, exercise_id: crunches.id, start_weight: 0, weight_increment: 0, set_reps: [12, 10, 8, 6])
+Step.create(routine_id: r5.id, exercise_id: knee_crunch.id, start_weight: 0, weight_increment: 0, set_reps: [12, 10, 8, 6])
+
 
 w1 = Workout.create(date: Date.today, routine_id: r1.id)
 Workset.create(workout_id: w1.id, exercise_id: front_squat.id, weight: 95, prescribed_reps: 5, accomplished_reps: 5)
